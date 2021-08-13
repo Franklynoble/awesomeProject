@@ -11,7 +11,7 @@ var qc template.HTML
 
 
 func init() {
-	t = template.Must(template.ParseFiles("index.html.html","quote.html"))
+	t = template.Must(template.ParseFiles("index.html","quote.html"))
 }
 /*
 Types to store data
@@ -48,5 +48,5 @@ func displayPage(w http.ResponseWriter, r *http.Request) {
 		Title: "A User",  //create dataset
 		Content: qc ,    //  with quote  html
 	}
-	t.ExecuteTemplate(w, "index.html.html",p) // Write quote and page to web server output
+	t.ExecuteTemplate(w, "index.html",p) // Write quote and page to web server output
 }

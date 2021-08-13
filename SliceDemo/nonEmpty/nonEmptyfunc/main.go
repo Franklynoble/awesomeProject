@@ -19,9 +19,9 @@ func main() {
 	fmt.Printf("%q\n",nonempty2(data1))  // `["one", "three"]`
 	fmt.Printf("%q\n",data1 )
 
-	fmt.Print("removing from index.html position")
+	fmt.Print("removing from index position")
 	s := []int{5,6,7,8,9}
-	fmt.Println(remove(s,2)) // "[5 6 8 9]" // remove from s @ index.html position 2
+	fmt.Println(remove(s,2)) // "[5 6 8 9]" // remove from s @ index position 2
 
 
 }
@@ -66,7 +66,7 @@ To remove an Element from the Middle of a slice, preserving the order of the rem
 copy to slide the higher-numbered elements down by one to fill the gap
  */
 func remove(slice []int, i int) []int {
-	copy(slice[i:],slice[i+1:]) // here slide the index.html backwards to cover the gap where element is Rmoved
+	copy(slice[i:],slice[i+1:]) // here slide the index backwards to cover the gap where element is Rmoved
 	return slice[:len(slice)-1]
 }
 

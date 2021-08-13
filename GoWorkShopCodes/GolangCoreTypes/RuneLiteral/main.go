@@ -34,7 +34,7 @@ func convert(){
 
 //5. Declare the string with a multi-byte string value:
 //We'll then loop over the string using range to give us each character, one at a time. We'll
-//then print out the byte index.html and the character to the console:
+//then print out the byte index and the character to the console:
 
 func rangeOverString() {
 	logLevel := "デバッグ"

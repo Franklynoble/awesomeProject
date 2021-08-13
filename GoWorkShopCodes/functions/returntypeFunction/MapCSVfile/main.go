@@ -31,7 +31,7 @@ func csvHdrCol(hdr []string) map[int]string {
 		//
 		//In our switch statement, we lower all the casing for exact matches. As you may
 		//recall, Go is a case-sensitive language. We need to ensure the casing is the same for
-		//matching purposes. When our code finds the header, it sets the index.html value for the
+		//matching purposes. When our code finds the header, it sets the index value for the
 		//header in the map:
 		switch strings.ToLower(v) {
 		case "employee":
