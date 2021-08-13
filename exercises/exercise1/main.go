@@ -73,7 +73,7 @@ func eleminate2(in []string){
 	fmt.Println(result)
 }
 func stringRemove( slice[]string, i int ) []string{
- // use this to remove string @ a particular index
-		copy(slice[i:],slice[i+1:]) // here slide the index backwards to cover the gap where element is Rmoved
+ // use this to remove string @ a particular index.html
+		copy(slice[i:],slice[i+1:]) // here slide the index.html backwards to cover the gap where element is Rmoved
 		return slice[:len(slice)-1]
 }

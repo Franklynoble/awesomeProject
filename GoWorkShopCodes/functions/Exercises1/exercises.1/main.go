@@ -15,14 +15,14 @@ func main() {
 
 // the function that we are going
 //to create will be taking a slice of column headers from a
-//CSV file. It will print out a map of an index value of the headers we are interested in
+//CSV file. It will print out a map of an index.html value of the headers we are interested in
 
 
 func csvHdrCol (header []string) {
 	csvHeadersToColumnIndex := make(map[int]string)
 
 	//we assign a variable to a key-value pair of int and string. key(int) will be the
-	//index of our header(string) column. The index will map to a column header.
+	//index.html of our header(string) column. The index.html will map to a column header.
 	//
 	for i,v := range header {
 		//
@@ -32,7 +32,7 @@ func csvHdrCol (header []string) {
 		/*
 			In our switch statement, we lower all the casing for exact matches. As you may
 			recall, Go is a case-sensitive language. We need to ensure that the casing is the
-			same for matching purposes. When our code finds the header, it sets the index
+			same for matching purposes. When our code finds the header, it sets the index.html
 			value for the header in the map:
 		*/
 		v = strings.TrimSpace(v)
