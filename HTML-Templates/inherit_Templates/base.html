@@ -1,0 +1,19 @@
+{{define "base"}}<!DOCTYPE
+        html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{template "Title".}}</title>
+    {{block "styles" . }}<style>
+        h1 {
+            color: #400080;
+        }
+    </style>{{end}}
+</head>
+<body>
+<h1>{{template "Title" .}}</h1> <!-- Defines and invokes the Scripts template, which is currently empty, An extending template can redefine the Contents--->
+{{template "Content" .}}
+{{block "scripts" .}} {{end}}
+
+</body>
+</html> {{end}}  <!--End of the Base template-->

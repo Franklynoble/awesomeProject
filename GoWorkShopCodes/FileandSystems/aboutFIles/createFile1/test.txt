@@ -1,0 +1,2 @@
+Using Write function.
+Using WriteString function.
