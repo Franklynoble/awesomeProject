@@ -1,6 +1,6 @@
 package main
 
-import "github.com/Franlky01/Exercises/package1/shape"
+import "github.com/Franlky01/Exercises/packageExercise/shape"
 
 func main() {
 
